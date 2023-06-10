@@ -18,7 +18,7 @@ function Contenido() {
   
     return (
       <>
-      <div className='App'>
+      <div>
         <div className='header'> 
           <SearchBar posts={posts} setSearchResults={setSearchResults} />
         </div>
