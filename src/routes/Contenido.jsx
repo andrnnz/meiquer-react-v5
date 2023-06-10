@@ -1,7 +1,10 @@
 import React, {useEffect, useState} from "react";
-import SearchBar from "../features/search/SearchBar";
+
 import ListPage from "../features/search/ListPage";
+import SearchBar from "../features/search/SearchBar";
+
 import { getPosts } from "../api/axios";
+import { Link } from "react-router-dom";
 import '../assets/Styles.css';
 
 function Contenido() {
@@ -19,8 +22,11 @@ function Contenido() {
     return (
       <>
       <div>
-        <div className='header'> 
+        <div className="header">
           <SearchBar posts={posts} setSearchResults={setSearchResults} />
+          <Link to="/actividades"><button className="btn-header">Actividades</button></Link>
+          <Link to="/Links"><button className="btn-header">Links</button></Link>
+          <Link to="/Videos"><button className="btn-header">Videos</button></Link>
         </div>
         <div className='main'>
           <ListPage searchResults={searchResults} />

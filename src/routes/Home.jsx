@@ -1,15 +1,13 @@
 import React from "react";
-import '../assets/Styles.css';
 
-
-const Colecciones = () => {
+const Home = () => {
     return (
         <>
             <div className="header"></div>
             <div className="main">
-                <p>jaj</p>
+                <p>home</p>
             </div>
         </>
     )
 }
-export default Colecciones;
+export default Home;

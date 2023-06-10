@@ -3,7 +3,6 @@
     text-align: center;
     background-color: #DDDDDD;
     min-height: 100vh;
-    font-size: calc(10px + 2vmin);
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -32,7 +31,6 @@
   .main{
     position: absolute;
     width: 67%;
-    min-width: 600px;
     height: 100%;
     left: 33%;
     top: 169px;
@@ -40,6 +38,7 @@
     background-color: #DDDDDD;;
     padding: 2% 3% 0% 3%;
     text-align: left;
+    overflow-x: hidden;
     overflow: auto;
   }
   
@@ -116,6 +115,25 @@
   .btn-blanco:hover{
     transition: 1000ms;
     background: linear-gradient(90deg, #0066CC 0%, #48cae4 100%);
+    cursor: pointer;
+  }
+
+  .btn-header{
+    min-width: 150px;
+    width: 60%;
+    height: 60px;
+    margin: 0 10px;
+
+    text-align: center;
+    border-radius: 40px;
+  
+    background-color: rgba(182, 182, 182, 0.804);
+    box-shadow: 6px 5px 97px -24px rgba(0,0,0,0.61);
+    -webkit-box-shadow: 6px 5px 97px -24px rgba(0,0,0,0.61);
+    -moz-box-shadow: 6px 5px 97px -24px rgba(0,0,0,0.61);
+    border:none;
+  }
+  .btn-header:hover{
     cursor: pointer;
   }
   
