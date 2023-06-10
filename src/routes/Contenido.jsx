@@ -23,10 +23,10 @@ function Contenido() {
       <>
       <div>
         <div className="header">
-          <SearchBar posts={posts} setSearchResults={setSearchResults} />
           <Link to="/actividades"><button className="btn-header">Actividades</button></Link>
           <Link to="/Links"><button className="btn-header">Links</button></Link>
           <Link to="/Videos"><button className="btn-header">Videos</button></Link>
+          <SearchBar posts={posts} setSearchResults={setSearchResults} />
         </div>
         <div className='main'>
           <ListPage searchResults={searchResults} />

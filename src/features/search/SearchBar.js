@@ -1,4 +1,6 @@
 import '../../assets/Styles.css';
+import { AiOutlineSearch } from "react-icons/ai";
+
 
 const SearchBar = ({ posts, setSearchResults }) => {
     const handleSubmit = (e) => e.preventDefault()
@@ -21,8 +23,8 @@ const SearchBar = ({ posts, setSearchResults }) => {
                     onChange={handleSearchChange}
                     placeholder="Buscar"
                 />
-                <button className="search_button"> buscar
-                </button>
+                <button className="search_button"> <AiOutlineSearch/> </button>
+
             </form>
         </header>
     )
