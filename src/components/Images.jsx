@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "../assets/Home.css";
-import sample from '../assets/sample.png'
 
 export default function Images({image1, image2}) {
   const [isActive, setIsActive] = useState(false);

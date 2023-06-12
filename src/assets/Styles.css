@@ -41,20 +41,6 @@
     overflow-x: hidden;
     overflow: auto;
   }
-
-  .home{
-    position: absolute;
-    width: 67%;
-    height: 100%;
-    left: 33%;
-    top: 51px;
-    font-family: 'Nats', sans-serif;
-    background-color: #DDDDDD;;
-    padding: 2% 3% 0% 3%;
-    text-align: left;
-    overflow-x: hidden;
-    overflow: auto;
-  }
   
   .sidebar{
     display: flex;
@@ -148,6 +134,9 @@
     border:none;
   }
   .btn-header:hover{
+    cursor: pointer;
+    transition: 500ms;
+    background: linear-gradient(90deg, #0066CC 0%, #48cae4 100%);
     cursor: pointer;
   }
   

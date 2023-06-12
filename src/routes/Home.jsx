@@ -9,10 +9,8 @@ const Home = () => {
     return (
         <>
             <div className="home">
-                <div className="homeContent">
-                    <h1 className="homeTitle">Bienvenido a la página de inicio</h1>
-                    <Images image1={sample} image2={space}/>
-                </div>
+                <h1 className="homeTitle">Bienvenido a la página de inicio</h1>
+                <Images image1={sample} image2={space}/>
             </div>
         </>
     )
