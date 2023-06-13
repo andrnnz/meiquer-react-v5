@@ -1,6 +1,5 @@
 import React from "react";
 import '../assets/css/Styles.css';
-import { Link } from "react-router-dom";
 
 const NuevaColeccion = () => {
     return (

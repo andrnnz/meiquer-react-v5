@@ -1,6 +1,6 @@
 .mainCole{
     position: absolute;
-    display: flex;
+    display: flexbox;
     grid-gap: 10px;
     min-height: 100vh;
     width: 67%;
@@ -10,14 +10,23 @@
     font-family: 'Nats', sans-serif;
     background-color: #DDDDDD;;
     padding: 2% 10% 0% 0%;
-    text-align: center;
     overflow-x: auto;
     overflow: auto;
     padding: 2% 3%;
+    text-align: left;
+}
+
+
+.colecciones{
+    text-align: center;
+    display: flex;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
 }
 
 .coleDiv{
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 10px;
     margin: 1%;
     height: 40%;
@@ -31,8 +40,32 @@
     flex-direction: column;
     position: relative;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .coleImg{
     width: 100%;
 }
+
+.btn-coleccion{
+    min-width: 150px;
+    width: 80%;
+    height: 60px;
+    margin: 0 10px;
+
+    text-align: center;
+    border-radius: 40px;
+  
+    background-color: rgba(182, 182, 182, 0.804);
+    box-shadow: 6px 5px 97px -24px rgba(0,0,0,0.61);
+    -webkit-box-shadow: 6px 5px 97px -24px rgba(0,0,0,0.61);
+    -moz-box-shadow: 6px 5px 97px -24px rgba(0,0,0,0.61);
+    border:none;
+    font-weight: 500;
+}
+.btn-coleccion:hover{
+    cursor: pointer;
+    transition: 500ms;
+    background: linear-gradient(90deg, #0066CC 0%, #48cae4 100%);
+    cursor: pointer;
+  }

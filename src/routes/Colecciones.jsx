@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { getPosts } from "../api/axios"; //GetPosts necesita ser adecuado a colecciones y a contenido
 
 import '../assets/css/Styles.css';
+import infoColecciones from '../files/infoColecciones';
 import space from '../assets/space.jpg'
 import sample from '../assets/sample.png'
 
@@ -28,6 +29,16 @@ const Colecciones = () => {
       })
     }, [])
 
+    const createColeccion = (cole) =>{
+        return(
+            <Coleccion
+                img={cole.img}
+                title={cole.title}
+                coleLink={cole.coleLink}
+            />
+        );
+    }
+
     return (
         <>
             <div className="header">
@@ -35,12 +46,10 @@ const Colecciones = () => {
                 <SearchBar posts={colecciones} setColeccionesResults={setColeccionesResults} />
             </div>
             <div className="mainCole">
-                <Coleccion
-                    img={space}
-                />
-                <Coleccion
-                    img={sample}
-                />
+                <h1>Colecciones</h1>
+                <div className="colecciones">
+                    {infoColecciones.map(createColeccion)}
+                </div>
             </div>
         </>
     )
