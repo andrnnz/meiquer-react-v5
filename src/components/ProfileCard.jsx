@@ -4,13 +4,14 @@ import sample from '../assets/sample.png';
 
 import '../assets/css/Colecciones.css';
 
-const ProfileCard = (perfil) => {
+const ProfileCard = (props) => {
     return (
         <div style={cardStyles.container}>
-            <img src={"https://marketplace.canva.com/EAFEits4-uw/1/0/1600w/canva-boy-cartoon-gamer-animated-twitch-profile-photo-oEqs2yqaL8s.jpg"} alt="sample" style={cardStyles.pp}/>
-            <h1>Juan</h1>
-            <Link to={"/colecciones"}>
-                <button className="btn-coleccion">Perfil</button>
+            <img src={props.url} alt="sample" style={cardStyles.pp}/>
+            <h1>{props.name}</h1>
+            <p>{props.email}</p>
+            <Link to={props.path}>
+                <button style={{marginTop: '1%'}} className="btn-coleccion">Perfil</button>
             </Link>
         </div>
 

@@ -7,8 +7,22 @@ import Images from '../components/Images'
 
 import ProfileCard from "../components/ProfileCard";
 
+import infoPerfil from "../files/infoPerfil";
+
 
 const Home = () => {
+
+    const createPerfil = (perf) => {
+        return (
+            <ProfileCard
+                key={perf.id}
+                name={perf.name}
+                email={perf.email}
+                url={perf.url}
+                path={perf.path}
+            />
+        );
+    }
 
     return (
         <>
@@ -18,7 +32,7 @@ const Home = () => {
                     <img className="homeImg" src={space} alt="space"/>
                 </div>
                 <div className="homePerfil">
-                    <ProfileCard/>
+                    {infoPerfil.map(createPerfil)}
                 </div>
             </div>
         </>
