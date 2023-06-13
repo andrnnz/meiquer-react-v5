@@ -1,12 +1,15 @@
-import React from 'react';
-import logo from '../assets/logo.svg';
-import '../assets/Styles.css';
+import React, { Fragment } from 'react';
 import { Outlet, Link } from 'react-router-dom';
+
+
+import logo from '../assets/logo.svg';
+import '../assets/css/Styles.css';
+
 
 
 export default function Root() {
     return (
-      <>
+      <Fragment>
         <div className="App">
             <div className="sidebar">
                 <img src={logo} className="App-logo" alt="logo" />
@@ -21,6 +24,6 @@ export default function Root() {
             <Outlet/>
             </div>
         </div>
-      </>
+      </Fragment>
     );
   }

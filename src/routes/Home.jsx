@@ -1,5 +1,6 @@
 import React from "react";
-import '../assets/Home.css';
+import '../assets/css/Home.css';
+
 import sample from '../assets/sample.png';
 import space from '../assets/space.jpg';
 import Images from '../components/Images'

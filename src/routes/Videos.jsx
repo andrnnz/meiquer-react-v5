@@ -1,6 +1,7 @@
 import React from "react";
-import '../assets/Styles.css';
 import { Link } from "react-router-dom";
+
+import '../assets/css/Styles.css';
 
 const Videos = () => {
     return (

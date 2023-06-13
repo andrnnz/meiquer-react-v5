@@ -1,6 +1,6 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
-import { Routes, Route, Outlet, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import {BrowserRouter as Router}  from "react-router-dom";
 
 
@@ -15,6 +15,9 @@ import Actividades from "./routes/Actividades";
 import Links from "./routes/Links";
 import Videos from "./routes/Videos";
 
+import NuevaColeccion from "./routes/NuevaColeccion";
+import NuevoContenido from "./routes/NuevoContenido";
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Router>
@@ -26,6 +29,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="/actividades" element={<Actividades/>}/>
           <Route path="/links" element={<Links/>}/>
           <Route path="/videos" element={<Videos/>}/>
+          <Route path="/NuevoContenido" element={<NuevoContenido/>}/>
+          <Route path="/NuevaColeccion" element={<NuevaColeccion/>}/>
+
           <Route path="*" element={<ErrorPage />} />
         </Route>
       </Routes>

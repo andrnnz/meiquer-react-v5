@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../assets/Home.css";
+import "../assets/css/Home.css";
 
 export default function Images({image1, image2}) {
   const [isActive, setIsActive] = useState(false);
@@ -15,8 +15,8 @@ export default function Images({image1, image2}) {
 
   return (
     <div>
-      {renderImageName(!isActive ? <img src={image1} alt="sample" className="homeImg"/> : <img src={image2} alt="sample" className="homeImg"/>, isActive)}
       <input type="checkbox" checked={isActive} onClick={handleClick} />
+      {renderImageName(!isActive ? <img src={image1} alt="sample" className="homeImg"/> : <img src={image2} alt="sample" className="homeImg"/>, isActive)}
     </div>
   );
 }

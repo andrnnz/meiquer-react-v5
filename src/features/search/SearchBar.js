@@ -1,4 +1,4 @@
-import '../../assets/Styles.css';
+import '../../assets/css/Styles.css';
 import { AiOutlineSearch } from "react-icons/ai";
 
 

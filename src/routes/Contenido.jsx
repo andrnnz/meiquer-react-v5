@@ -5,7 +5,7 @@ import SearchBar from "../features/search/SearchBar";
 
 import { getPosts } from "../api/axios";
 import { Link } from "react-router-dom";
-import '../assets/Styles.css';
+import '../assets/css/Styles.css';
 
 function Contenido() {
     const [posts, setPosts] = useState([])
