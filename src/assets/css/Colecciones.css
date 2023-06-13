@@ -42,6 +42,39 @@
     position: relative;
     cursor: pointer;
     text-decoration: none;
+    box-shadow: 0px 8px 19px -3px rgba(0,0,0,0.58);
+    -webkit-box-shadow: 0px 8px 19px -3px rgba(0,0,0,0.58);
+    -moz-box-shadow: 0px 8px 19px -3px rgba(0,0,0,0.58);
+}
+
+.actDiv{
+    border-radius: 10px;
+    padding: 5%;
+    margin: 1%;
+    height: 20%;
+    width: 80%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: opacity 0.4s ease-in;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0px 8px 19px -3px rgba(0,0,0,0.58);
+    -webkit-box-shadow: 0px 8px 19px -3px rgba(0,0,0,0.58);
+    -moz-box-shadow: 0px 8px 19px -3px rgba(0,0,0,0.58);
+}
+
+.infoAct{
+    text-align: left;
+    border-radius: 10px;
+    padding: 2% 5%;
+    background-color: #ddddddc6;
+    width: 90%;
+    height: 100%;
 }
 
 .coleImg{

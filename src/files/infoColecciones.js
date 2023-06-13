@@ -12,6 +12,7 @@ const infoColecciones = [
         title: "Ocean",
         coleLink: "/",
     },
+
 ]
 
 export default infoColecciones;
