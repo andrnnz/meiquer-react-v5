@@ -1,14 +1,13 @@
 import React, {useEffect, useState}from "react";
 import { Link } from 'react-router-dom';
+import Stack from '@mui/material/Stack';
+
 
 import { getPosts } from "../api/axios"; //GetPosts necesita ser adecuado a colecciones y a contenido
 
 import '../assets/css/Styles.css';
 import infoColecciones from '../files/infoColecciones';
-import space from '../assets/space.jpg'
-import sample from '../assets/sample.png'
 
-import ListPage from "../features/search/ListPage";
 import SearchBar from "../features/search/SearchBar";
 
 import Coleccion from '../components/Coleccion';
@@ -32,6 +31,7 @@ const Colecciones = () => {
     const createColeccion = (cole) =>{
         return(
             <Coleccion
+                key={cole.id}
                 img={cole.img}
                 title={cole.title}
                 coleLink={cole.coleLink}
@@ -47,7 +47,7 @@ const Colecciones = () => {
             </div>
             <div className="mainCole">
                 <h1>Colecciones</h1>
-                <div className="colecciones">
+                <div style={{width: '100%'}} className="colecciones">
                     {infoColecciones.map(createColeccion)}
                 </div>
             </div>

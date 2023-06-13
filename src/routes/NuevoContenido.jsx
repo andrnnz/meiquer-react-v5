@@ -2,6 +2,11 @@ import React from "react";
 import '../assets/css/Styles.css';
 import { Link } from "react-router-dom";
 
+
+import UploaderButton from "../features/Uploader";
+
+
+
 const NuevoContenido = () => {
     return (
         <>
@@ -11,7 +16,9 @@ const NuevoContenido = () => {
                 <Link to="/Videos"><button className="btn-header">Videos</button></Link>
             </div>
             <div className="main">
-                <p>NuevaColeccion</p>
+                <p>Subir Contenido</p>
+                <UploaderButton/>
+
             </div>
         </>
     )

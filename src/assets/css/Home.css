@@ -26,6 +26,29 @@
     background-color: #f5f5f5;;
     padding: 2% 5% 0% 3%;
     text-align: left;
-    overflow-x: hidden;
+    overflow-x: auto;
     overflow-y: scroll;
+
+    display: inline-block;
+    justify-content: space-between;
+    margin-bottom: 5%;
+
+  }
+
+  .homePerfil{
+    position: absolute;
+    width: 43%;
+    height: 50%;
+    margin: 1%;
+    left: 33%;
+    right: 10%;
+    top: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 5%;
   }

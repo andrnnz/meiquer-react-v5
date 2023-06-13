@@ -190,3 +190,26 @@
   .search_button:hover{
     cursor: pointer;
   }
+
+
+  .inputFile{
+    min-width: 100px;
+    width: 60%;
+    height: 60px;
+  
+  
+    text-align: center;
+    border-radius: 40px;
+  
+    background-color: rgba(182, 182, 182, 0.804);
+    box-shadow: 6px 5px 97px -24px rgba(0,0,0,0.61);
+    -webkit-box-shadow: 6px 5px 97px -24px rgba(0,0,0,0.61);
+    -moz-box-shadow: 6px 5px 97px -24px rgba(0,0,0,0.61);
+    border:none;
+  }
+  .inputFile:hover{
+    cursor: pointer;
+    transition: 500ms;
+    background: linear-gradient(90deg, #0066CC 0%, #48cae4 100%);
+    cursor: pointer;
+  }

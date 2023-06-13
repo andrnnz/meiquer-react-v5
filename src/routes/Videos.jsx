@@ -13,6 +13,7 @@ const Videos = () => {
             </div>
             <div className="main">
                 <p>videos</p>
+                <Link to="/NuevoContenido"><button className="btn-header">Subir Contenido</button></Link>
             </div>
         </>
     )
