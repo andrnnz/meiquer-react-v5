@@ -20,6 +20,7 @@ const Actividades = () => {
                 titulo={actividad.titulo}
                 descripcion={actividad.descripcion}
                 deadline={actividad.deadline}
+                etiqueta={actividad.etiqueta}
             />
         );
     }
@@ -35,7 +36,7 @@ const Actividades = () => {
                 <Grid container spacing={2} columns={2} style={{marginBottom: '5%', marginTop: '2%'}}>
                 <Link to="/NuevoContenido"><button className="btn-header">Crear Actividad</button></Link>
                 </Grid>
-                <Grid container spacing={2} columns={2} style={{width: '100%', textAlign:'center'}} className="colecciones">
+                <Grid container spacing={2} columns={1} style={{width: '100%', textAlign:'center', display:'-webkit-inline-flex'}} className="colecciones">
                     {infoActividades.map(createActividad)}
                 </Grid>
                 <div style={{height: '200px'}}></div>

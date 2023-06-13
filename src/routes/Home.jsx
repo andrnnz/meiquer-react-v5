@@ -6,6 +6,7 @@ import space from '../assets/space.jpg';
 import Images from '../components/Images'
 
 import ProfileCard from "../components/ProfileCard";
+import FunFact from "../api/FunFact";
 
 import infoPerfil from "../files/infoPerfil";
 
@@ -30,7 +31,10 @@ const Home = () => {
                 <h1>Inicio</h1>
                 <div style={{display: '-ms-flexbox'}}>
                     <div className="homeFun">
-                        <h1>Fun Fact</h1>
+                        <h2>Random Fact:</h2>
+                        <FunFact
+                            url="https://uselessfacts.jsph.pl/random.json?language=en"
+                        />
                     </div>
                     <div className="homeFun">
                         <h1>idk</h1>
