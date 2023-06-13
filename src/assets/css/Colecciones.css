@@ -11,7 +11,7 @@
     background-color: #DDDDDD;;
     padding: 2% 10% 0% 0%;
     overflow-x: auto;
-    overflow: auto;
+    overflow-y: scroll;
     padding: 2% 3%;
     text-align: left;
 }

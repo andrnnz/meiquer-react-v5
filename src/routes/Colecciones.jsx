@@ -1,8 +1,5 @@
 import React, {useEffect, useState}from "react";
 import { Link } from 'react-router-dom';
-import Stack from '@mui/material/Stack';
-
-
 import { getPosts } from "../api/axios"; //GetPosts necesita ser adecuado a colecciones y a contenido
 
 import '../assets/css/Styles.css';
@@ -11,6 +8,7 @@ import infoColecciones from '../files/infoColecciones';
 import SearchBar from "../features/search/SearchBar";
 
 import Coleccion from '../components/Coleccion';
+import { Grid } from "@mui/material";
 
 
 
@@ -47,9 +45,10 @@ const Colecciones = () => {
             </div>
             <div className="mainCole">
                 <h1>Colecciones</h1>
-                <div style={{width: '100%'}} className="colecciones">
+                <Grid container spacing={2} columns={2} style={{width: '100%'}} className="colecciones">
                     {infoColecciones.map(createColeccion)}
-                </div>
+                </Grid>
+                <div style={{height: '200px'}}></div>
             </div>
         </>
     )

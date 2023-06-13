@@ -28,8 +28,13 @@ const Home = () => {
         <>
             <div className="home">
                 <h1>Inicio</h1>
-                <div style={cardStyles.container}>
-                    <img className="homeImg" src={space} alt="space"/>
+                <div style={{display: '-ms-flexbox'}}>
+                    <div className="homeFun">
+                        <h1>Fun Fact</h1>
+                    </div>
+                    <div className="homeFun">
+                        <h1>idk</h1>
+                    </div>
                 </div>
                 <div className="homePerfil">
                     {infoPerfil.map(createPerfil)}
@@ -38,13 +43,5 @@ const Home = () => {
         </>
     )
 }
-
-
-const cardStyles = {
-    container: {
-        width: '20%',
-        backgroundColor: '#fff',
-    },
-    };
 
 export default Home;

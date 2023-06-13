@@ -1,6 +1,5 @@
 import React from "react";
 import {Link} from 'react-router-dom';
-import sample from '../assets/sample.png';
 
 import '../assets/css/Colecciones.css';
 
