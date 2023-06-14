@@ -70,14 +70,13 @@
 
 .vidDiv{
     border-radius: 10px;
-    padding: 1% 1% 56.25% 1%;
     margin: 1%;
-    width: 80%;
+    width: 90%;
     background-size: cover;
     background-repeat: no-repeat;
     transition: opacity 0.4s ease-in;
     display: flex;
-    align-items: center;
+    text-align: center;
     justify-content: center;
     flex-direction: column;
     position: relative;
@@ -104,9 +103,9 @@
 
 .btn-coleccion{
     min-width: 150px;
-    width: 80%;
+    width: 90%;
     height: 60px;
-    margin: 0 10px;
+    margin: 0 10px 10px 0;
 
     text-align: center;
     border-radius: 40px;
@@ -124,13 +123,44 @@
     color: white;
     background: #446276;
     cursor: pointer;
-  }
+}
+
+.btn-coleccionDelete{
+    min-width: 150px;
+    width: 90%;
+    height: 60px;
+    margin: 0 10px;
+
+    text-align: center;
+    border-radius: 40px;
+  
+    background-color: rgba(182, 182, 182, 0.804);
+    box-shadow: 6px 5px 97px -24px rgba(0,0,0,0.61);
+    -webkit-box-shadow: 6px 5px 97px -24px rgba(0,0,0,0.61);
+    -moz-box-shadow: 6px 5px 97px -24px rgba(0,0,0,0.61);
+    border:none;
+    font-weight: 500;
+}
+.btn-coleccionDelete:hover{
+    cursor: pointer;
+    transition: 300ms;
+    color: white;
+    background: linear-gradient(90deg, #f4a496 0%, #ff8e3d 100%);
+    cursor: pointer;
+}
+
+.vidCont{
+    padding: 1% 1% 56.25% 1%; 
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */ 
+    width: 70%;
+}
 
 .vid{
-    width: 100%;
-    height: 100%;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 20%;
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
 }

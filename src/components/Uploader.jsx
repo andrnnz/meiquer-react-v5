@@ -1,20 +1,50 @@
-import React, { useState, useRef } from 'react'
+import React, { useRef } from 'react';
 
-const Uploader = (props) => {
-    const fileInput = useRef(null)
-    return (
-        <>
-            <input type="file" 
-            ref={fileInput}
-            style={{ display: 'none' }} 
-            />
+const Uploader = () => {
+  const fileInput = useRef(null);
 
-            <button
-            className='inputFile'
-            onClick={() => fileInput.current.click()}
-            >Subir Archivo </button>
-        </>
-    )
-}
+  const handleFileUpload = async () => {
+    const file = fileInput.current.files[0];
+    if (file) {
+      const formData = new FormData();
+      formData.append('file', file);
+
+      try {
+        const response = await fetch('http://localhost:3002/files', {
+          method: 'POST',
+          body: formData,
+        });
+
+        if (response.ok) {
+          // File upload successful
+          console.log('File uploaded successfully');
+        } else {
+          // File upload failed
+          console.error('File upload failed');
+        }
+      } catch (error) {
+        console.error('Error uploading file:', error);
+      }
+    }
+  };
+
+  return (
+    <>
+      <input
+        type="file"
+        ref={fileInput}
+        style={{ display: 'none' }}
+        onChange={handleFileUpload}
+      />
+
+      <button
+        className="inputFile"
+        onClick={() => fileInput.current.click()}
+      >
+        Subir Archivo
+      </button>
+    </>
+  );
+};
 
 export default Uploader;

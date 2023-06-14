@@ -8,6 +8,7 @@ const Coleccion = (props) => {
         <div className="coleDiv" style={{backgroundImage: `url(${props.img})`}}>
             <Link to={props.coleLink}>
                 <button className="btn-coleccion">{props.title}</button>
+                <button className="btn-coleccionDelete">Eliminar</button>
             </Link>
         </div>
         
