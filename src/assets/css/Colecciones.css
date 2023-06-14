@@ -66,6 +66,27 @@
     -moz-box-shadow: 0px 8px 19px -3px rgba(0,0,0,0.58);
 }
 
+.vidDiv{
+    border-radius: 10px;
+    padding: 10px;
+    margin: 1%;
+    height: 50%;
+    width: 70%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: opacity 0.4s ease-in;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0px 8px 19px -3px rgba(0,0,0,0.58);
+    -webkit-box-shadow: 0px 8px 19px -3px rgba(0,0,0,0.58);
+    -moz-box-shadow: 0px 8px 19px -3px rgba(0,0,0,0.58);
+}
+
 .infoAct{
     text-align: left;
     border-radius: 10px;
