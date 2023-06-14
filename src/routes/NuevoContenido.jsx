@@ -2,6 +2,7 @@ import React from "react";
 import '../assets/css/Styles.css';
 import { Link } from "react-router-dom";
 
+import Uploader from "../components/Uploader";
 
 
 const NuevoContenido = () => {
@@ -13,9 +14,7 @@ const NuevoContenido = () => {
                 <Link to="/Videos"><button className="btn-header">Videos</button></Link>
             </div>
             <div className="main">
-                <p>Subir Contenido</p>
-                <button type="file" className="inputFile">Subir Archivo</button>
-
+                <Uploader />
             </div>
         </>
     )
