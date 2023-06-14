@@ -2,9 +2,12 @@ import * as React from "react";
 import * as ReactDOM from "react-dom/client";
 
 import Rutas from "./Rutas";
+import Login from "./Login";
+
+var logged = false;
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <Rutas/>
+    {logged === true ? <Rutas/> : <Login/>}
   </React.StrictMode>
 );
