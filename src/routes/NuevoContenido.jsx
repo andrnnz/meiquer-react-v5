@@ -3,9 +3,6 @@ import '../assets/css/Styles.css';
 import { Link } from "react-router-dom";
 
 
-import UploaderButton from "../features/Uploader";
-
-
 
 const NuevoContenido = () => {
     return (
@@ -17,7 +14,7 @@ const NuevoContenido = () => {
             </div>
             <div className="main">
                 <p>Subir Contenido</p>
-                <UploaderButton/>
+                <button className="inputFile">Subir Archivo</button>
 
             </div>
         </>
