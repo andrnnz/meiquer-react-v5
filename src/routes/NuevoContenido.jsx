@@ -14,7 +14,7 @@ const NuevoContenido = () => {
             </div>
             <div className="main">
                 <p>Subir Contenido</p>
-                <button className="inputFile">Subir Archivo</button>
+                <button type="file" className="inputFile">Subir Archivo</button>
 
             </div>
         </>
