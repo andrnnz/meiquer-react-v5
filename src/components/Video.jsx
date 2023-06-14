@@ -2,18 +2,12 @@ import React from "react";
 
 import '../assets/css/Colecciones.css';
 
+import RandomImg from "../api/RandomImg";
+
 const Video = (props) => {
     return (
         <div className="vidDiv" style={{backgroundImage: `url(${props.img})`}}>
-            <h2>{props.title}</h2>
-            <iframe
-                width="100%"
-                height="100%"
-                src={props.url}
-                title="Youtube Player"
-                frameborder="0"
-                allowFullScreen
-            />
+            <RandomImg url="https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY"/>
         </div>
         
     );
