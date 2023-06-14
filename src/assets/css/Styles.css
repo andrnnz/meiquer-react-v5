@@ -1,3 +1,5 @@
+@import '@marcius-capital/fonts';
+
 .App {
     position: absolute;
     text-align: center;
@@ -15,9 +17,9 @@
   
   .header{
     position: absolute;
-    width: 67%;
+    width: 73%;
     height: 118px;
-    left: 33%;
+    left: 29%;
     right: 0;
     top: 51px;
     display: flex;
@@ -30,11 +32,11 @@
   
   .main{
     position: absolute;
-    width: 67%;
+    width: 73%;
     height: 100%;
-    left: 33%;
+    left: 29%;
     top: 169px;
-    font-family: 'Nats', sans-serif;
+    font-family: 'HelveticaNeueCyr', sans-serif;
     background-color: #DDDDDD;;
     padding: 2% 3% 0% 3%;
     text-align: left;
@@ -43,6 +45,7 @@
   }
   
   .sidebar{
+    font-family: 'HelveticaNeueCyr', sans-serif;
     display: flex;
     flex-direction: column;
     justify-items: auto;
@@ -51,8 +54,8 @@
     gap: 116px;
   
     position: absolute;
-    width: 30%;
-    min-width: 350px;
+    width: 25%;
+    min-width: 200px;
     height: 100%;
     bottom: 0;
     left: 0;
@@ -65,7 +68,7 @@
   }
   
   .btn-negro{
-    width: 100%;
+    width: 80%;
     height: 60px;
     right: 20px;
     top: 25%;
@@ -75,6 +78,7 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
+    font-family: 'HelveticaNeueCyr', sans-serif;
   
     background: #000000;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
@@ -86,14 +90,15 @@
   }
   .btn-negro:hover{
     transition: 1000ms;
-    background: linear-gradient(90deg, #0066CC 0%, #48cae4 100%);
+    background: linear-gradient(90deg, #446276 0%, #515151 100%);
     cursor: pointer;
   }
   
   .btn-blanco{
-    width: 100%;
+    width: 80%;
     height: 60px;
     right: 180px;
+    font-family: 'HelveticaNeueCyr', sans-serif;
   
     margin-top: 5%;
     font-weight: 500;
@@ -105,16 +110,15 @@
     border-radius: 40px;
   
     background-color: rgba(94, 94, 94, 0.04);
-    box-shadow: 6px 5px 97px -24px rgba(0,0,0,0.61);
-    -webkit-box-shadow: 6px 5px 97px -24px rgba(0,0,0,0.61);
-    -moz-box-shadow: 6px 5px 97px -24px rgba(0,0,0,0.61);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
     border:none;
     transition: 800ms;
   }
   
   .btn-blanco:hover{
-    transition: 1000ms;
-    background: linear-gradient(90deg, #0066CC 0%, #48cae4 100%);
+    transition: 300ms;
+    color: white;
+    background: linear-gradient(90deg, #446276 0%, #515151 100%);
     cursor: pointer;
   }
 
@@ -126,17 +130,18 @@
 
     text-align: center;
     border-radius: 40px;
+    font-family: 'HelveticaNeueCyr', sans-serif;
+
   
-    background-color: rgba(182, 182, 182, 0.804);
-    box-shadow: 6px 5px 97px -24px rgba(0,0,0,0.61);
-    -webkit-box-shadow: 6px 5px 97px -24px rgba(0,0,0,0.61);
-    -moz-box-shadow: 6px 5px 97px -24px rgba(0,0,0,0.61);
+    background: linear-gradient(90deg, #f4a496 0%, #ff8e3d 100%);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
     border:none;
   }
   .btn-header:hover{
     cursor: pointer;
     transition: 500ms;
-    background: linear-gradient(90deg, #0066CC 0%, #48cae4 100%);
+    color: white;
+    background: linear-gradient(90deg, #ff8e3d 50%, #bae847 100%);
     cursor: pointer;
   }
   
@@ -179,16 +184,17 @@
     width: 50px;
     margin: 0 10px;
   
-    background: #000000;
+    background: #446276;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
     border-radius: 40px;
     color: white;
-    transition: 1000ms;
+    transition: 300ms;
   
     border: none;
   }
   .search_button:hover{
     cursor: pointer;
+    background: linear-gradient(90deg, #f4a496 0%, #ff8e3d 100%);
   }
 
 
@@ -210,6 +216,6 @@
   .inputFile:hover{
     cursor: pointer;
     transition: 500ms;
-    background: linear-gradient(90deg, #0066CC 0%, #48cae4 100%);
+    background: linear-gradient(90deg, #446276 0%, #515151 100%);
     cursor: pointer;
   }

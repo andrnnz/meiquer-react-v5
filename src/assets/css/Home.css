@@ -1,3 +1,5 @@
+@import '@marcius-capital/fonts';
+
 .homeContent{
     padding: 5%;
     width: 100%;
@@ -8,6 +10,7 @@
     text-align: center;
     height: 100vh;
     background-color: #f5f5f5;
+    font-family: 'HelveticaNeueCyr', sans-serif;
 }
 
 .homeImg{
@@ -17,11 +20,11 @@
 
 .home{
     position: absolute;
-    width: 67%;
+    width: 73%;
     height: 100%;
-    left: 33%;
+    left: 29%;
     top: 51px;
-    font-family: 'Nats', sans-serif;
+    font-family: 'HelveticaNeueCyr', sans-serif;
     background-color: #f5f5f5;;
     padding: 2% 5% 0% 3%;
     text-align: left;
@@ -39,8 +42,8 @@
     width: 43%;
     height: 50%;
     margin: 1%;
-    left: 33%;
-    right: 10%;
+    left: 32%;
+    right: 15%;
     top: 70px;
     display: flex;
     flex-direction: row;

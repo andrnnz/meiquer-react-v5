@@ -1756,6 +1756,11 @@
   resolved "https://registry.npmjs.org/@leichtgewicht/ip-codec/-/ip-codec-2.0.4.tgz"
   integrity sha512-Hcv+nVC0kZnQ3tD9GVu5xSMR4VVYOteQIr/hwFPVEvPdlXqgGEuRjiheChHgdM+JyqdgNcmzZOX/tnl0JOiI7A==
 
+"@marcius-capital/fonts@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.npmjs.org/@marcius-capital/fonts/-/fonts-1.0.2.tgz"
+  integrity sha512-PwjKBvZvyCNoKBCFNzKmdNMD//ZLJmpXSRU/pM7Tv3/M1ku6AZWUvLqBFTQeYMY+g7qT51HWV6l7aof5csfZaQ==
+
 "@mui/base@5.0.0-beta.4":
   version "5.0.0-beta.4"
   resolved "https://registry.npmjs.org/@mui/base/-/base-5.0.0-beta.4.tgz"

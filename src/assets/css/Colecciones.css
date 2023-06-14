@@ -1,13 +1,15 @@
+@import '@marcius-capital/fonts';
+
 .mainCole{
     position: absolute;
     display: flexbox;
     grid-gap: 10px;
     min-height: 100vh;
-    width: 67%;
+    width: 73%;
     height: 100%;
-    left: 33%;
+    left: 29%;
     top: 169px;
-    font-family: 'Nats', sans-serif;
+    font-family: 'HelveticaNeueCyr', sans-serif;
     background-color: #DDDDDD;;
     padding: 2% 10% 0% 0%;
     overflow-x: auto;
@@ -88,6 +90,7 @@
 }
 
 .infoAct{
+    font-family: 'HelveticaNeueCyr', sans-serif;
     text-align: left;
     border-radius: 10px;
     padding: 0 5% 3% 5%;
@@ -118,7 +121,8 @@
 }
 .btn-coleccion:hover{
     cursor: pointer;
-    transition: 500ms;
-    background: linear-gradient(90deg, #0066CC 0%, #48cae4 100%);
+    transition: 300ms;
+    color: white;
+    background: #446276;
     cursor: pointer;
   }
