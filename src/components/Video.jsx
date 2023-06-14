@@ -5,6 +5,7 @@ import '../assets/css/Colecciones.css';
 const Video = (props) => {
     return (
         <div className="vidDiv" style={{backgroundImage: `url(${props.img})`}}>
+            <h2>{props.titulo}</h2>
             <iframe 
                 className="vid"
                 src={props.url} 

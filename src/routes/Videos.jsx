@@ -16,7 +16,7 @@ const Videos = () => {
             <Video
                 key={video.id}
                 url={video.url}
-                title={video.title}
+                titulo={video.titulo}
             />
         );
     }
