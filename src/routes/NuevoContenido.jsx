@@ -14,10 +14,25 @@ const NuevoContenido = () => {
                 <Link to="/Videos"><button className="btn-header">Videos</button></Link>
             </div>
             <div className="main">
-                <Uploader />
+                <div style={styles.container}>
+                    <Uploader />
+                </div>
             </div>
         </>
     )
+}
+
+const styles = {
+    container: {
+        width: '70%',
+        backgroundColor: '#fff',
+        TextAlign: 'center',
+        justifyContent: 'center',
+        display: 'flexbox',
+        flexDirection: 'column',
+        padding: '5%',
+        borderRadius: '10px',
+    },
 }
 
 export default NuevoContenido;
