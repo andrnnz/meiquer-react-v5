@@ -95,6 +95,8 @@
     background-color: #ddddddc6;
     width: 90%;
     height: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .coleImg{
@@ -148,6 +150,34 @@
     background: linear-gradient(90deg, #f4a496 0%, #ff8e3d 100%);
     cursor: pointer;
 }
+
+.btn-act{
+    width: 20%;
+    height: 60px;
+    right: 180px;
+    font-family: 'HelveticaNeueCyr', sans-serif;
+  
+    margin-top: 6%;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    /* or 100% */
+  
+    text-align: center;
+    border-radius: 40px;
+  
+    background-color: rgba(94, 94, 94, 0.04);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    border:none;
+    transition: 800ms;
+  }
+  
+  .btn-act:hover{
+    transition: 300ms;
+    color: white;
+    background: linear-gradient(90deg, #f4a496 0%, #ff8e3d 100%);
+    cursor: pointer;
+  }
 
 .vidCont{
     padding: 1% 1% 56.25% 1%; 

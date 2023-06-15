@@ -6,8 +6,6 @@ const infoColecciones = [
         title: "Conectando Hacia las Estrellas",
         coleLink: "/",
     },
-
-
 ]
 
 export default infoColecciones;

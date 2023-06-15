@@ -217,6 +217,7 @@
     cursor: pointer;
     transition: 500ms;
     background: linear-gradient(90deg, #446276 0%, #515151 100%);
+    color: white;
     cursor: pointer;
   }
 
@@ -296,4 +297,39 @@
     color: white;
     background: linear-gradient(90deg, #f4a496 0%, #ff8e3d 100%);
     cursor: pointer;
+  }
+  .btn-nuevo{
+    width: 50%;
+    height: 60px;
+    font-family: 'HelveticaNeueCyr', sans-serif;
+  
+    margin-top: 1%;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    /* or 100% */ 
+    text-align: center;
+    border-radius: 40px;
+    background-color: rgba(94, 94, 94, 0.04);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    border:none;
+    transition: 800ms;
+  }
+  
+  .btn-nuevo:hover{
+    transition: 300ms;
+    color: white;
+    background: linear-gradient(90deg, #f4a496 0%, #ff8e3d 100%);
+    cursor: pointer;
+  }
+
+
+  .input-nuevo{
+    width: 50%;
+    margin: 0.5% 0;
+    border-radius: 20px;
+    border: none;
+    padding: 2%;
+    font-size: 20px;
+    font-family: 'HelveticaNeueCyr', sans-serif;
   }
