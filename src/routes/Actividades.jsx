@@ -34,12 +34,12 @@ const Actividades = () => {
             <div className="mainCole">
                 <h1>Actividades</h1>
                 <Grid container spacing={2} columns={2} style={{marginBottom: '5%', marginTop: '2%'}}>
-                <Link to="/NuevoContenido"><button className="btn-header">Crear Actividad</button></Link>
+                <Link to="/NuevaActividad"><button className="btn-header">Crear Actividad</button></Link>
                 </Grid>
                 <Grid container spacing={2} columns={1} style={{width: '100%', textAlign:'center', display:'-webkit-inline-flex'}} className="colecciones">
                     {infoActividades.map(createActividad)}
                 </Grid>
-                <div style={{height: '200px'}}></div>
+                <div style={{height: '300px'}}></div>
             </div>
         </>
     )

@@ -17,6 +17,7 @@ import Videos from "./routes/Videos";
 import NuevaColeccion from "./routes/NuevaColeccion";
 import NuevoContenido from "./routes/NuevoContenido";
 import NuevoVideo from "./routes/NuevoVideo";
+import NuevaActividad from "./routes/NuevaActividad";
 
 const Rutas = () => {
     return (
@@ -33,6 +34,7 @@ const Rutas = () => {
                     <Route path="/NuevoContenido" element={<NuevoContenido/>}/>
                     <Route path="/NuevoVideo" element={<NuevoVideo/>}/>
                     <Route path="/NuevaColeccion" element={<NuevaColeccion/>}/>
+                    <Route path="/NuevaActividad" element={<NuevaActividad/>}/>
                     <Route path="*" element={<ErrorPage />} />
                     </Route>
                 </Routes>

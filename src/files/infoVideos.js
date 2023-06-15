@@ -4,6 +4,7 @@ const infoVideos = [
         url: "https://www.youtube.com/embed/DVmbz-iczW4",
         titulo: "Conectando Hacia las Estrellas: Introducción",
         descripcion: "Descripcion 1",
+        etiqueta: "Astronomía",
     },
 ]
 
