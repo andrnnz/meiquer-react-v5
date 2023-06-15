@@ -1,8 +1,8 @@
 import React, { useState }from "react";
-import '../assets/css/Styles.css';
 import { Link } from "react-router-dom";
 
-import infoColecciones from '../files/infoColecciones.js'
+import '../assets/css/Styles.css';
+import infoColecciones from '../files/infoColecciones.js';
 
 
 const NuevaColeccion = () => {

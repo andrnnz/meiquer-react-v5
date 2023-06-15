@@ -9,4 +9,9 @@ const infoColecciones = [
     },
 ]
 
+
+export const getInfoColecciones = () => {
+    return [...infoColecciones];
+};
+
 export default infoColecciones;
