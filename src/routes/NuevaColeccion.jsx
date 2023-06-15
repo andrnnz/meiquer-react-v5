@@ -16,9 +16,9 @@ const NuevaColeccion = () => {
     const handleOnClick = (event) => {
         const nuevaColeccion = {
             id: nextId,
-            titulo: titulo,
+            title: titulo,
             etiqueta: etiqueta,
-            url: url,
+            img: url,
         }
         setColecciones([...colecciones, nuevaColeccion]);
         infoColecciones.push(nuevaColeccion);
