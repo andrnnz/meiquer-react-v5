@@ -15,6 +15,7 @@ const ActividadesCard = () => {
                 titulo={actividad.titulo}
                 deadline={actividad.deadline}
                 etiqueta={actividad.etiqueta}
+                path={actividad.path}
             />
         );
     }

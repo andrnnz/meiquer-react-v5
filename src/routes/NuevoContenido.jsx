@@ -15,7 +15,7 @@ const NuevoContenido = () => {
 
     const handleOnClick = (event) => {
         const nuevoCont = {
-            title: titulo,
+            titulo: titulo,
             etiqueta: etiqueta,
             url: url,
         }

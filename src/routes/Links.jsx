@@ -26,13 +26,15 @@ const Links = () => {
                 <Link to="/Links"><button className="btn-header">Links</button></Link>
                 <Link to="/Videos"><button className="btn-header">Videos</button></Link>
             </div>
-            <div className="main">
-                <Link to="/NuevoContenido"><button className="btn-header" style={{marginLeft:'12%'}}>Agregar Contenido</button></Link>
-                <h1 className="h1Contenido" style={{marginTop:'5%'}}> Links/Referencias </h1>
-                <hr/>
+            <div className="main" style={{overflowY:'scroll'}}>
+                <h1 style={{marginTop:'5%'}}> Links/Referencias </h1>
+                <Grid container spacing={2} columns={2} style={{marginBottom: '5%', marginTop: '2%'}}>
+                    <Link to="/NuevoContenido"><button className="btn-header" style={{marginLeft:'12%'}}>Agregar Contenido</button></Link>
+                </Grid>
                 <Grid container spacing={2} columns={2} style={{marginBottom: '5%', marginTop: '2%'}}>
                     {infoLinks.map(createReferencia)}
                 </Grid>
+                <div style={{minHeight: '300px', marginTop:'20%'}}> </div>
             </div>
         </>
     )

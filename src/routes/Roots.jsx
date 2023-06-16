@@ -17,7 +17,6 @@ export default function Root() {
                     <Link to="/"><button className="btn-blanco">Inicio</button></Link>
                     <Link to="/colecciones"><button className="btn-blanco">Colecciones</button></Link>
                     <Link to="/contenido"><button className="btn-blanco">Contenido</button></Link>
-                    <button className="btn-negro">Perfil</button>
                 </div>
             </div>
             <div id="detail">
