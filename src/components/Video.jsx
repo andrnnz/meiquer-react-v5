@@ -4,7 +4,7 @@ import '../assets/css/Colecciones.css';
 
 const Video = (props) => {
     return (
-        <div className="vidDiv" style={{backgroundImage: `url(${props.img})`}}>
+        <div className="vidDiv">
             <h2>{props.titulo}</h2>
             <div className="vidCont">
                 <iframe 
@@ -15,6 +15,8 @@ const Video = (props) => {
                     allowfullscreen>
                 </iframe>
             </div>
+            <h3 style={{color: '#446276'}}>{props.etiqueta}</h3>
+            <p>{props.descripcion}</p>
         </div>
         
     );

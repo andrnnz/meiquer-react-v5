@@ -17,6 +17,8 @@ const Videos = () => {
                 key={video.id}
                 url={video.url}
                 titulo={video.titulo}
+                etiqueta={video.etiqueta}
+                descripcion={video.descripcion}
             />
         );
     }
@@ -32,7 +34,7 @@ const Videos = () => {
                 <Grid container spacing={2} columns={2} style={{marginBottom: '5%', marginTop: '2%'}}>
                     <Link to="/NuevoVideo"><button className="btn-header">Nuevo Video</button></Link>
                 </Grid>
-                <Grid container spacing={2} columns={1} style={{width: '100%', textAlign:'center',}} className="colecciones">
+                <Grid container spacing={2} columns={2} style={{width: '100%', textAlign:'center',}} className="colecciones">
                     {infoVideos.map(createVideo)}
                 </Grid>
                 <div style={{height: '200px'}}></div>

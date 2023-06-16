@@ -1,11 +1,12 @@
-import React, {useEffect, useState} from "react";
-
-import ListPage from "../features/search/ListPage";
+import React, {useEffect, useState} from "react"; 
+import ListPage from "../features/search/ListPage";   
 import SearchBar from "../features/search/SearchBar";
 
 import { getPosts } from "../api/axios";
 import { Link } from "react-router-dom";
 import '../assets/css/Styles.css';
+
+import ActividadesCard from "../components/ActividadesCard";
 
 function Contenido() {
     const [posts, setPosts] = useState([])
@@ -21,6 +22,7 @@ function Contenido() {
   
     return (
       <>
+
       <div>
         <div className="header">
           <Link to="/actividades"><button className="btn-header">Actividades</button></Link>
@@ -29,7 +31,8 @@ function Contenido() {
           <SearchBar posts={posts} setSearchResults={setSearchResults} />
         </div>
         <div className='main'>
-          <ListPage searchResults={searchResults} />
+          <h1>Contenido</h1>
+          <ActividadesCard />
         </div>
       </div>
       </>

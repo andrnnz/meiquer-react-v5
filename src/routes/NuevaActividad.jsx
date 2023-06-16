@@ -12,7 +12,6 @@ const NuevaActividad = () => {
     const [descripcion, setDescripcion] = useState('');
     const [img, setImg] = useState('');
     const [deadline, setDeadline] = useState('');
-    const [link, setLink] = useState('');
     const [etiqueta, setEtiqueta] = useState('');
 
     const handleOnClick = (event) => {
@@ -44,7 +43,6 @@ const NuevaActividad = () => {
                     onChange={(event) => setTitulo(event.target.value)}
                     />
 
-                    
                     <input 
                     value={etiqueta}
                     type="text" 
