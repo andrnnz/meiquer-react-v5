@@ -17,7 +17,7 @@ const Colecciones = () => {
             <Coleccion
                 key={cole.id}
                 img={cole.img}
-                title={cole.title}
+                titulo={cole.titulo}
                 coleLink={cole.coleLink}
             />
         );

@@ -16,7 +16,7 @@ const NuevaColeccion = () => {
     const handleOnClick = (event) => {
         const nuevaColeccion = {
             id: nextId,
-            title: titulo,
+            titulo: titulo,
             etiqueta: etiqueta,
             img: url,
         }

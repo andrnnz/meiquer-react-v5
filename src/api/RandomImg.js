@@ -5,6 +5,7 @@ const RandomImg = (props) => {
     const [title, setTitle] = useState([]);
     const [link, setLink] = useState([]);
     const [explanation, setExplanation] = useState([]);
+    
     useEffect(() => {
         axios.get(props.url)
             .then(response => {
