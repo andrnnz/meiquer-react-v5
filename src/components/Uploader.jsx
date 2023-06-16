@@ -30,19 +30,21 @@ const Uploader = () => {
 
   return (
     <>
-      <input
-        type="file"
-        ref={fileInput}
-        style={{ display: 'none' }}
-        onChange={handleFileUpload}
-      />
+      <div style={{width:'100', textAlign:'center'}}>
+        <input
+          type="file"
+          ref={fileInput}
+          style={{ display: 'none' }}
+          onChange={handleFileUpload}
+        />
 
-      <button
-        className="inputFile"
-        onClick={() => fileInput.current.click()}
-      >
-        Subir Archivo
-      </button>
+        <button
+          className="inputFile"
+          onClick={() => fileInput.current.click()}
+        >
+          Subir Archivo
+        </button>
+      </div>
     </>
   );
 };

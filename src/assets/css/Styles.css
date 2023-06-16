@@ -199,8 +199,8 @@
 
 
   .inputFile{
-    min-width: 100px;
-    width: 60%;
+    min-width: 60px;
+    width: 50%;
     height: 60px;
   
   
@@ -327,6 +327,17 @@
   .input-nuevo{
     width: 50%;
     margin: 0.5% 0;
+    border-radius: 20px;
+    border: none;
+    padding: 2%;
+    font-size: 20px;
+    font-family: 'HelveticaNeueCyr', sans-serif;
+  }
+
+  .input-contenido{
+    width: 100%;
+    margin: 0.5%;
+    align-self: center;
     border-radius: 20px;
     border: none;
     padding: 2%;

@@ -15,8 +15,26 @@ const NuevoContenido = () => {
             </div>
             <div className="main">
                 <div style={styles.container}>
-                    <Uploader />
-                </div>
+                <h1 className="h1Contenido" style={{marginBottom:'5%'}}> Agregar Contenido </h1>
+                    <input
+                    type="text" 
+                    placeholder="Título" 
+                    className="input-contenido" 
+                    />
+                    <input
+                    type="text" 
+                    placeholder="Etiqueta" 
+                    className="input-contenido" 
+                    />
+                    <input
+                    type="text" 
+                    placeholder="Enlace" 
+                    className="input-contenido" 
+                    />
+                    <div style={{marginTop:'5%'}}>
+                        <Uploader/>
+                    </div>
+                </div>             
             </div>
         </>
     )
@@ -26,11 +44,7 @@ const styles = {
     container: {
         width: '70%',
         backgroundColor: '#fff',
-        TextAlign: 'center',
-        justifyContent: 'center',
-        display: 'flexbox',
-        flexDirection: 'column',
-        padding: '5%',
+        padding: '7%',
         borderRadius: '10px',
     },
 }

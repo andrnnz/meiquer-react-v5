@@ -1,5 +1,5 @@
 import React from "react";
-import '../assets/css/Styles.css';
+import '../assets/css/Colecciones.css';
 import { Link } from "react-router-dom";
 
 const Links = () => {
@@ -11,7 +11,7 @@ const Links = () => {
                 <Link to="/Videos"><button className="btn-header">Videos</button></Link>
             </div>
             <div className="main">
-                <p>links</p>
+                <Link to="/NuevoContenido"><button className="btn-header">Agregar Contenido</button></Link>
             </div>
         </>
     )
