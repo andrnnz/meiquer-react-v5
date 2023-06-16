@@ -30,7 +30,7 @@ const NuevaActividad = () => {
     return (
         <>
             <div className="header" style={{display:'flex', fontFamily:'HelveticaNeueCyr'}}>
-                <Link to="/Colecciones"><button className="btn-header">Colecciones</button></Link>
+                <Link to="/Actividades"><button className="btn-header">Actividades</button></Link>
             </div>
             <div className="main">
             <h2 style={{marginRight:'5%', overflowY: 'scroll'}}>Nueva Actividad</h2>
