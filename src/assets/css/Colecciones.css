@@ -86,7 +86,7 @@
 
 .btn-coleccion{
     min-width: 150px;
-    width: 90%;
+    width: 100%;
     height: 60px;
     margin: 0 10px 10px 0;
 
@@ -110,7 +110,7 @@
 
 .btn-coleccionDelete{
     min-width: 150px;
-    width: 90%;
+    width: 50%;
     height: 60px;
     margin: 0 10px;
 

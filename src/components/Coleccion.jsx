@@ -6,10 +6,8 @@ import '../assets/css/Colecciones.css';
 const Coleccion = (props) => {
     return (
         <div className="coleDiv" style={{backgroundImage: `url(${props.img})`}}>
-            <Link to={props.coleLink}>
-                <button className="btn-coleccion">{props.title}</button>
-                <button className="btn-coleccionDelete">Eliminar</button>
-            </Link>
+            <Link to={props.path} style={{width:'100'}}><button className="btn-coleccion">{props.title}</button></Link>
+            <button className="btn-coleccionDelete">Eliminar</button>
         </div>
         
     );

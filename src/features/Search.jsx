@@ -1,11 +1,22 @@
-import React from "react";
+import React from 'react'
+import infoActividades from '../files/infoActividades.js'
 
-const Search = () => {
+function List(props) {
+    
+    const filteredData = infoActividades.filter((el) => {
+        if (props.input === '') {
+            return el;
+        } else {
+            return el.etiqueta.toLowerCase().includes(props.input.toLowerCase());
+        }
+    })
     return (
-        <div>
-            <h1>Search</h1>
-        </div>
-    );
+        <ul>
+            {filteredData.map((item) => (
+                <li key={item.id}>{item.etiqueta}</li>
+            ))}
+        </ul>
+    )
 }
 
-export default Search;
+export default List
