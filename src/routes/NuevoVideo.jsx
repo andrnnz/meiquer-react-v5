@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import infoVideos from "../files/infoVideos";
 
 const NuevoVideo = () => {
-    const [videos, setVideos] = useState(infoVideos.infoVideos);
+    const [videos, setVideos] = useState(infoVideos);
     const [nextId, setNextId] = useState(1);
     const [titulo, setTitulo] = useState('');
     const [descripcion, setDescripcion] = useState('');
@@ -21,7 +21,7 @@ const NuevoVideo = () => {
             descripcion: descripcion,
         }
         setVideos([...videos, nuevoVideo]);
-        infoVideos.infoVideos.push(nuevoVideo);
+        infoVideos.push(nuevoVideo);
         setNextId(nextId + 1);
     }
 

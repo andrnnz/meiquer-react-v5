@@ -34,7 +34,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="homePerfil">
-                    {infoPerfil.infoPerfil.map(createPerfil)}
+                    {infoPerfil.map(createPerfil)}
                 </div>
             </div>
         </>

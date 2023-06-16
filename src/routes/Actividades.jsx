@@ -38,7 +38,7 @@ const Actividades = () => {
                 <Link to="/NuevaActividad"><button className="btn-header">Crear Actividad</button></Link>
                 </Grid>
                 <Grid container spacing={2} columns={1} style={{width: '100%', textAlign:'center', display:'-webkit-inline-flex'}} className="colecciones">
-                    {infoActividades.infoActividades.map(createActividad)}
+                    {infoActividades.map(createActividad)}
                 </Grid>
                 <div style={{height: '300px'}}></div>
             </div>

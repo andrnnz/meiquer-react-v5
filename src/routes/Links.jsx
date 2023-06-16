@@ -32,7 +32,7 @@ const Links = () => {
                     <Link to="/NuevoContenido"><button className="btn-header" style={{marginLeft:'12%'}}>Agregar Contenido</button></Link>
                 </Grid>
                 <Grid container spacing={2} columns={2} style={{marginBottom: '5%', marginTop: '2%'}}>
-                    {infoLinks.infoLinks.map(createReferencia)}
+                    {infoLinks.map(createReferencia)}
                 </Grid>
                 <div style={{minHeight: '300px', marginTop:'20%'}}> </div>
             </div>

@@ -28,9 +28,9 @@ const Colecciones = () => {
             </div>
             <div className="mainCole">
                 <h1>Colecciones</h1>
-                <GetInfo/>
+                <GetInfo source={infoColecciones}/>
                 <Grid container spacing={2} columns={2} style={{width: '100%'}} className="colecciones">
-                    {infoColecciones.infoColecciones.map(createColeccion)}
+                    {infoColecciones.map(createColeccion)}
                 </Grid>
                 <div style={{height: '200px'}}></div>
             </div>

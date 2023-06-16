@@ -1,11 +1,8 @@
-
-{
-    "infoLinks": [
-        {
-            "id": 1,
-            "titulo": "Google",
-            "etiqueta": "About",
-            "url": "https://www.google.com/"
-        }
-    ]
-}
+[
+    {
+        "id": 1,
+        "titulo": "Google",
+        "etiqueta": "About",
+        "url": "https://www.google.com/"
+    }
+]

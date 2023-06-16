@@ -6,8 +6,7 @@ import infoColecciones from '../files/infoColecciones.json';
 
 
 const NuevaColeccion = () => {
-    const [colecciones, setColecciones] = useState(infoColecciones.infoColecciones);
-    const [nextId, setNextId] = useState(1);
+    const [colecciones, setColecciones] = useState(infoColecciones);
 
     const [titulo, setTitulo] = useState('');
     const [etiqueta, setEtiqueta] = useState('');
@@ -15,14 +14,12 @@ const NuevaColeccion = () => {
 
     const handleOnClick = (event) => {
         const nuevaColeccion = {
-            id: nextId,
             titulo: titulo,
             etiqueta: etiqueta,
             img: url,
         }
         setColecciones([...colecciones, nuevaColeccion]);
-        infoColecciones.infoColecciones.push(nuevaColeccion);
-        setNextId(nextId + 1);
+        infoColecciones.push(nuevaColeccion);
     }
     return (
         <>
