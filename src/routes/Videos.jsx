@@ -35,7 +35,7 @@ const Videos = () => {
                     <Link to="/NuevoVideo"><button className="btn-header">Nuevo Video</button></Link>
                 </Grid>
                 <Grid container spacing={2} columns={2} style={{width: '100%', textAlign:'center',}} className="colecciones">
-                    {infoVideos.map(createVideo)}
+                    {infoVideos.infoVideos.map(createVideo)}
                 </Grid>
                 <div style={{height: '200px'}}></div>
             </div>

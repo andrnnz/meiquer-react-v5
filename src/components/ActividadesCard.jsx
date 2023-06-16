@@ -24,7 +24,7 @@ const ActividadesCard = () => {
         <div className="card">
             <Link to="/actividades"><h1 className="h1Contenido">Actividades</h1></Link>
             <Grid container spacing={2} columns={3} style={{width: '100%', textAlign:'center', display:'-webkit-inline-flex'}} className="colecciones">
-                    {infoActividades.map(createActividad)}
+                    {infoActividades.infoActividades.map(createActividad)}
             </Grid>
         </div>
     );

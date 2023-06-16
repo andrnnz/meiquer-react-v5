@@ -5,7 +5,7 @@ import '../assets/css/Styles.css';
 import infoActividades from "../files/infoActividades";
 
 const NuevaActividad = () => {
-    const [actividades, setActividades] = useState(infoActividades);
+    const [actividades, setActividades] = useState(infoActividades.infoActividades);
     const [nextId, setNextId] = useState(1);
 
     const [titulo, setTitulo] = useState('');
@@ -24,7 +24,7 @@ const NuevaActividad = () => {
             descripcion: descripcion,
         }
         setActividades([...actividades, nuevaAct]);
-        infoActividades.push(nuevaAct);
+        infoActividades.infoActividades.push(nuevaAct);
         setNextId(nextId + 1);
     }
     return (

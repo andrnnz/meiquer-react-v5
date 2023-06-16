@@ -2,11 +2,11 @@ import React, { useState }from "react";
 import { Link } from "react-router-dom";
 
 import '../assets/css/Styles.css';
-import infoColecciones from '../files/infoColecciones.js';
+import infoColecciones from '../files/infoColecciones.json';
 
 
 const NuevaColeccion = () => {
-    const [colecciones, setColecciones] = useState(infoColecciones);
+    const [colecciones, setColecciones] = useState(infoColecciones.infoColecciones);
     const [nextId, setNextId] = useState(1);
 
     const [titulo, setTitulo] = useState('');
@@ -21,7 +21,7 @@ const NuevaColeccion = () => {
             img: url,
         }
         setColecciones([...colecciones, nuevaColeccion]);
-        infoColecciones.push(nuevaColeccion);
+        infoColecciones.infoColecciones.push(nuevaColeccion);
         setNextId(nextId + 1);
     }
     return (

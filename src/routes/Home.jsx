@@ -15,7 +15,7 @@ const Home = () => {
                 key={perf.id}
                 name={perf.name}
                 email={perf.email}
-                url={perf.url}
+                img={perf.img}
                 path={perf.path}
             />
         );
@@ -34,7 +34,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="homePerfil">
-                    {infoPerfil.map(createPerfil)}
+                    {infoPerfil.infoPerfil.map(createPerfil)}
                 </div>
             </div>
         </>

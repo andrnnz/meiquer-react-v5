@@ -7,11 +7,9 @@ import infoColecciones from '../files/infoColecciones';
 import Coleccion from '../components/Coleccion';
 import { Grid } from "@mui/material";
 
-
-
+import GetInfo from "../api/GetInfo";
 
 const Colecciones = () => {
-
     const createColeccion = (cole) =>{
         return(
             <Coleccion
@@ -30,8 +28,9 @@ const Colecciones = () => {
             </div>
             <div className="mainCole">
                 <h1>Colecciones</h1>
+                <GetInfo/>
                 <Grid container spacing={2} columns={2} style={{width: '100%'}} className="colecciones">
-                    {infoColecciones.map(createColeccion)}
+                    {infoColecciones.infoColecciones.map(createColeccion)}
                 </Grid>
                 <div style={{height: '200px'}}></div>
             </div>

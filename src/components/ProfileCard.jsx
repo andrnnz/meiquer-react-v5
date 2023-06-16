@@ -6,7 +6,7 @@ import '../assets/css/Colecciones.css';
 const ProfileCard = (props) => {
     return (
         <div style={cardStyles.container}>
-            <img src={props.url} alt="sample" style={cardStyles.pp}/>
+            <img src={props.img} alt="sample" style={cardStyles.pp}/>
             <h1>{props.name}</h1>
             <p>{props.email}</p>
             <Link to={props.path}>

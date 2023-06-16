@@ -7,7 +7,7 @@ import infoLinks from "../files/infoLinks";
 
 
 const NuevoContenido = () => {
-    const [referencias, setReferencias] = useState(infoLinks);
+    const [referencias, setReferencias] = useState(infoLinks.infoLinks);
 
     const [url, setUrl] = useState('');
     const [titulo, setTitulo] = useState('');
@@ -20,7 +20,7 @@ const NuevoContenido = () => {
             url: url,
         }
         setReferencias([...referencias, nuevoCont]);
-        infoLinks.push(nuevoCont);
+        infoLinks.infoLinks.push(nuevoCont);
     }
     return (
         <>
