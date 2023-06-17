@@ -44,6 +44,7 @@ const Rutas = () => {
                     <Route path="/NuevaActividad" element={<NuevaActividad/>}/>
                     <Route path="actividades/:actId" element={<Acti/>}/>
                     
+                    
                     <Route path="*" element={<ErrorPage />} />
                     </Route>
                 </Routes>

@@ -9,6 +9,7 @@ const Referencia = (props) => {
                 <h1 className="h1Contenido">{props.titulo}</h1>
                 <p className="pContenido">{props.etiqueta}</p>
                 <Link to={props.url}><button className="btn-header">Ver</button></Link>
+                <button className="btn-header" style={{margin:'5%'}}>Eliminar</button>
             </div>
         </>
     )
