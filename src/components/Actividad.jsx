@@ -15,8 +15,9 @@ const Actividad = (props) => {
                 </div>
                 <div style={{width: '40%'}}>
                     <Link to={`/actividades/${props.id}`}>
-                    <button className="btn-header" style={{width: '80%', marginTop:'20%'}}>Ver Actividad</button>
+                    <button className="btn-header" style={{width: '80%', marginTop:'5%'}}>Ver Actividad</button>
                     </Link>
+                    <button className="btn-header" style={{width: '80%', marginTop:'2%'}}>Eliminar</button>
                 </div>
             </div>
         </div>
