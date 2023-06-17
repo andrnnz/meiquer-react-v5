@@ -1,7 +1,7 @@
 import React from "react";
 import logoblanco from "./assets/logoblanco.svg";
 
-const Login = () => {
+const Login = (props) => {
     return (
         <div className="login">
             <div style={{width: '100%', textAlign: 'center'}}>

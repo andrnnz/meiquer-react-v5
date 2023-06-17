@@ -6,7 +6,6 @@ import infoActividades from "../files/infoActividades";
 
 const NuevaActividad = () => {
     const [actividades, setActividades] = useState(infoActividades);
-    const [nextId, setNextId] = useState(1);
 
     const [titulo, setTitulo] = useState('');
     const [descripcion, setDescripcion] = useState('');
@@ -16,7 +15,6 @@ const NuevaActividad = () => {
 
     const handleOnClick = (event) => {
         const nuevaAct = {
-            id: nextId,
             titulo: titulo,
             etiqueta: etiqueta,
             img: img,
@@ -25,7 +23,6 @@ const NuevaActividad = () => {
         }
         setActividades([...actividades, nuevaAct]);
         infoActividades.push(nuevaAct);
-        setNextId(nextId + 1);
     }
     return (
         <>

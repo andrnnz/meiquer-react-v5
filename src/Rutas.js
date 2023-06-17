@@ -19,8 +19,8 @@ import NuevoContenido from "./routes/NuevoContenido";
 import NuevoVideo from "./routes/NuevoVideo";
 import NuevaActividad from "./routes/NuevaActividad";
 
-
-import insideColeccion from "./insideRoutes/insideColeccion";
+import Cole from "./routes/Cole";
+import Acti from "./routes/Acti";
 
 const Rutas = () => {
     return (
@@ -30,17 +30,20 @@ const Rutas = () => {
                     <Route path="/" element={<Roots />}>
                     <Route index element={<Home/>}/>
                     <Route path="/contenido" element={<Contenido/>}/>
-                    <Route path="/colecciones" element={<Colecciones/>}/>
                     <Route path="/actividades" element={<Actividades/>}/>
                     <Route path="/links" element={<Links/>}/>
                     <Route path="/videos" element={<Videos/>}/>
                     <Route path="/NuevoContenido" element={<NuevoContenido/>}/>
                     <Route path="/NuevoVideo" element={<NuevoVideo/>}/>
 
+
+                    <Route path="/colecciones" element={<Colecciones/>}/>
                     <Route path="/NuevaColeccion" element={<NuevaColeccion/>}/>
-                    <Route path="/Colecciones/:id" element={<insideColeccion/>}/>
+                    <Route path="colecciones/:coleccionId" element={<Cole/>}/>
 
                     <Route path="/NuevaActividad" element={<NuevaActividad/>}/>
+                    <Route path="actividades/:actId" element={<Acti/>}/>
+                    
                     <Route path="*" element={<ErrorPage />} />
                     </Route>
                 </Routes>

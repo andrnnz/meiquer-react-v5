@@ -14,7 +14,7 @@ const Actividad = (props) => {
                     <p>{props.etiqueta}</p>
                 </div>
                 <div style={{width: '40%'}}>
-                    <Link to={props.path}>
+                    <Link to={`/actividades/${props.id}`}>
                     <button className="btn-header" style={{width: '80%', marginTop:'20%'}}>Ver Actividad</button>
                     </Link>
                 </div>

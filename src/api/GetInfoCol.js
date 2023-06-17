@@ -21,8 +21,7 @@ const GetInfoCol = (props) => {
     );
 
     return (
-        console.log(titulo, img, etiqueta));
-    );
+        console.log({titulo}, {img}, {etiqueta}));
 }
 
 

@@ -21,7 +21,7 @@ const Actividades = () => {
                 descripcion={actividad.descripcion}
                 deadline={actividad.deadline}
                 etiqueta={actividad.etiqueta}
-                path={actividad.path}
+                id={actividad.id}
             />
         );
     }

@@ -1,4 +1,4 @@
-import React, {useEffect, useState}from "react";
+import React from "react";
 import { Link } from 'react-router-dom';
 
 import '../assets/css/Styles.css';
@@ -7,8 +7,6 @@ import infoColecciones from '../files/infoColecciones';
 import Coleccion from '../components/Coleccion';
 import { Grid } from "@mui/material";
 
-import GetInfoCol from "../api/GetInfoCol";
-
 const Colecciones = () => {
     const createColeccion = (cole) =>{
         return(
@@ -16,7 +14,7 @@ const Colecciones = () => {
                 key={cole.id}
                 img={cole.img}
                 titulo={cole.titulo}
-                coleLink={cole.coleLink}
+                id={cole.id}
             />
         );
     }
@@ -28,7 +26,6 @@ const Colecciones = () => {
             </div>
             <div className="mainCole">
                 <h1>Colecciones</h1>
-                <GetInfoCol source={"http://localhost:3000/files/infoColecciones.json"}/>
                 <Grid container spacing={2} columns={2} style={{width: '100%'}} className="colecciones">
                     {infoColecciones.map(createColeccion)}
                 </Grid>

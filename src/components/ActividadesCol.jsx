@@ -3,13 +3,13 @@ import '../assets/css/Contenido.css'
 import { Grid } from "@mui/material";
 import { Link } from "react-router-dom";
 
-import ActividadChica from "./ActividadChica";
+import ActividadesChiquito from "./ActividadesChiquito";
 import infoActividades from "../files/infoActividades";
 
-const ActividadesCard = () => {
+const ActividadesCol = () => {
     const createActividad = (actividad) =>{
         return(
-            <ActividadChica
+            <ActividadesChiquito
                 key={actividad.id}
                 img={actividad.img}
                 titulo={actividad.titulo}
@@ -21,8 +21,7 @@ const ActividadesCard = () => {
     }
 
     return (
-        <div className="card">
-            <Link to="/actividades"><h1 className="h1Contenido">Actividades</h1></Link>
+        <div className="cardChiquito">
             <Grid container spacing={2} columns={3} style={{width: '100%', textAlign:'center', display:'-webkit-inline-flex'}} className="colecciones">
                     {infoActividades.map(createActividad)}
             </Grid>
@@ -30,4 +29,4 @@ const ActividadesCard = () => {
     );
 }
 
-export default ActividadesCard;
+export default ActividadesCol;

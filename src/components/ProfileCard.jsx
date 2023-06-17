@@ -9,9 +9,6 @@ const ProfileCard = (props) => {
             <img src={props.img} alt="sample" style={cardStyles.pp}/>
             <h1>{props.name}</h1>
             <p>{props.email}</p>
-            <Link to={props.path}>
-                <button style={{marginTop: '1%'}} className="btn-coleccion">Perfil</button>
-            </Link>
         </div>
 
     );

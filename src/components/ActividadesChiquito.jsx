@@ -2,10 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import '../assets/css/Contenido.css'
 
-const ActividadChica = (props) => {
+const ActividadesChiquito = (props) => {
     return (
-        <div className="actChica" style={{backgroundImage: `url(${props.img})`}}>
-            <div className="infoActChica">
+        <div className="actChiquito" style={{backgroundImage: `url(${props.img})`}}>
+            <div className="infoActChiquito">
                 <Link to={`/actividades/${props.id}`} style={{textDecoration: 'none'}}>
                 <div>
                     <h3>{props.titulo}</h3>
@@ -19,4 +19,4 @@ const ActividadChica = (props) => {
     );
 }
 
-export default ActividadChica;
+export default ActividadesChiquito;

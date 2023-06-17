@@ -190,3 +190,30 @@
 }
 
 
+.coleCont{
+    padding: 3%;
+    border-radius: 10px;
+    margin: 1%;
+    width: 30%;
+    height: 50%;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0px 8px 19px -3px rgba(0,0,0,0.58);
+    -webkit-box-shadow: 0px 8px 19px -3px rgba(0,0,0,0.58);
+    -moz-box-shadow: 0px 8px 19px -3px rgba(0,0,0,0.58);
+}
+
+.coleCont2{
+    padding: 8%;
+    border-radius: 10px;
+    margin: 5%;
+    width: 90%;
+    height: 20%;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0px 8px 19px -3px rgba(0,0,0,0.58);
+    -webkit-box-shadow: 0px 8px 19px -3px rgba(0,0,0,0.58);
+    -moz-box-shadow: 0px 8px 19px -3px rgba(0,0,0,0.58);
+}
