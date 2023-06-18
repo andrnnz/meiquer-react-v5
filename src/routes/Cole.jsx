@@ -25,18 +25,18 @@ function Cole() {
         <div style={{display:'flex', overflowX:'scroll', width:'100%'}}>
         <div className="coleCont">
           <h4 className="h1Contenido">Actividades</h4>
-          <Link to={'/'}><h4 className="h1Contenido">Nueva Actividad</h4></Link>
+          <Link to={`/colecciones/${coleccionId}/AddActividad`}><h4 className="h1Contenido">Nueva Actividad</h4></Link>
           <ActividadesCol />
         </div>
         <div style={{width:'40%', marginLeft:'2%'}}>
           <div className="coleCont2">
             <h4 className="h1Contenido">Links</h4>
-            <Link to={'/'}><h4 className="h1Contenido">Nuevo Link</h4></Link>
+            <Link to={`/colecciones/${coleccionId}/AddLink`}><h4 className="h1Contenido">Nuevo Link</h4></Link>
             <LinksCol />
           </div>
           <div className="coleCont2">
             <h4 className="h1Contenido">Videos</h4>
-            <Link to={'/'}><h4 className="h1Contenido">Nuevo Video</h4></Link>
+            <Link to={`/colecciones/${coleccionId}/AddVideos`}><h4 className="h1Contenido">Nuevo Video</h4></Link>
             <VideosCol />
           </div>
         </div>

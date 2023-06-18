@@ -14,7 +14,7 @@ function Acti(props) {
     return (
       <>
         <div className="header">
-        <Link to=".." relative="path"><button className="btn-header">Regresar</button></Link>      
+        <Link to="/actividades"><button className="btn-header">Actividades</button></Link>   
         <h1 className="h1Contenido" style={{fontFamily: 'HelveticaNeue'}}>{props.titulo}</h1>
       </div>
       <div className='main' style={{display:'flex'}}>

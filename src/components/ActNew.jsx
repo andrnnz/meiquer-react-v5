@@ -17,7 +17,7 @@ const ActNew = (props) => {
                     <Link to={`/actividades/${props.id}`}>
                     <button className="btn-header" style={{width: '80%', marginTop:'5%'}}>Ver Actividad</button>
                     </Link>
-                    <Link to={`/coleccion/${props.id}`}><button className="btn-header" style={{width: '80%', marginTop:'2%'}}>Agregar</button></Link>
+                    <button className="btn-header" style={{width: '80%', marginTop:'2%'}}>Agregar</button>
                 </div>
             </div>
         </div>

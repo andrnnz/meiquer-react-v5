@@ -2,7 +2,7 @@ import React from "react";
 
 import '../assets/css/Colecciones.css';
 
-const Video = (props) => {
+const VidNew = (props) => {
     return (
         <div className="vidDiv">
             <h2>{props.titulo}</h2>
@@ -17,10 +17,10 @@ const Video = (props) => {
             </div>
             <h3 style={{color: '#446276'}}>{props.etiqueta}</h3>
             <p>{props.descripcion}</p>
-            <button className="btn-header" style={{width: '80%', marginTop:'2%'}}>Eliminar</button>
+            <button className="btn-header" style={{width: '80%', marginTop:'2%'}}>Agregar</button>
         </div>
         
     );
 }
 
-export default Video;
+export default VidNew;

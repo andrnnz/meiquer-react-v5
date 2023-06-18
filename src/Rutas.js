@@ -22,6 +22,10 @@ import NuevaActividad from "./routes/NuevaActividad";
 import Cole from "./routes/Cole";
 import Acti from "./routes/Acti";
 
+import AddActividad from "./routes/AddActividad";
+import AddVideos from "./routes/AddVideos";
+import AddLink from "./routes/AddLink";
+
 const Rutas = () => {
     return (
         <>
@@ -38,6 +42,9 @@ const Rutas = () => {
                     <Route path="/colecciones" element={<Colecciones/>}/>
                     <Route path="/NuevaColeccion" element={<NuevaColeccion/>}/>
                     <Route path="/colecciones/:coleccionId" element={<Cole/>}/>
+                    <Route path="/colecciones/:coleccionId/AddActividad" element={<AddActividad/>}/>
+                    <Route path="/colecciones/:coleccionId/AddVideos" element={<AddVideos/>}/>
+                    <Route path="/colecciones/:coleccionId/AddLink" element={<AddLink/>}/>
 
                     <Route path="/NuevaActividad" element={<NuevaActividad/>}/>
                     <Route path="/actividades" element={<Actividades/>}/>
