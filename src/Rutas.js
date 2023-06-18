@@ -30,20 +30,18 @@ const Rutas = () => {
                     <Route path="/" element={<Roots />}>
                     <Route index element={<Home/>}/>
                     <Route path="/contenido" element={<Contenido/>}/>
-                    <Route path="/actividades" element={<Actividades/>}/>
                     <Route path="/links" element={<Links/>}/>
                     <Route path="/videos" element={<Videos/>}/>
                     <Route path="/NuevoContenido" element={<NuevoContenido/>}/>
                     <Route path="/NuevoVideo" element={<NuevoVideo/>}/>
 
-
                     <Route path="/colecciones" element={<Colecciones/>}/>
                     <Route path="/NuevaColeccion" element={<NuevaColeccion/>}/>
-                    <Route path="colecciones/:coleccionId" element={<Cole/>}/>
+                    <Route path="/colecciones/:coleccionId" element={<Cole/>}/>
 
                     <Route path="/NuevaActividad" element={<NuevaActividad/>}/>
-                    <Route path="actividades/:actId" element={<Acti/>}/>
-                    
+                    <Route path="/actividades" element={<Actividades/>}/>
+                    <Route path="/actividades/:actId" element={<Acti/>}/>
                     
                     <Route path="*" element={<ErrorPage />} />
                     </Route>

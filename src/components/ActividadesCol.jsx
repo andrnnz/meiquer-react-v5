@@ -6,7 +6,8 @@ import { Link } from "react-router-dom";
 import ActividadesChiquito from "./ActividadesChiquito";
 import infoActividades from "../files/infoActividades";
 
-const ActividadesCol = () => {
+const ActividadesCol = (props) => {
+    
     const createActividad = (actividad) =>{
         return(
             <ActividadesChiquito
